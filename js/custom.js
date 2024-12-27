@@ -39,14 +39,7 @@ document.querySelector('a[href="#info"]').addEventListener('click', function (e)
     document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
   });
 
-/** google_map js **/
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
+
 
 // To redirect to top of the Home page after submit email 
 function redirectToTop() {

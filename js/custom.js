@@ -1,11 +1,11 @@
 // to get current year
-function getYear() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
-}
+// function getYear() {
+//     var currentDate = new Date();
+//     var currentYear = currentDate.getFullYear();
+//     document.querySelector("#displayYear").innerHTML = currentYear;
+// }
 
-getYear();
+// getYear();
 
 
 // client section owl carousel
@@ -47,3 +47,13 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+// To redirect to top of the Home page after submit email 
+function redirectToTop() {
+    // Wait for a brief moment to ensure the form submission completes
+    setTimeout(() => {
+      // Redirect back to the same page
+      window.location.href = window.location.pathname; // Reloads the current page from the top
+    }, 100); // Adjust delay as needed for form processing
+    return true; // Allow the form submission to proceed
+  }

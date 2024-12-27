@@ -79,7 +79,7 @@
                 <a class="nav-link" href="contact.html">Projects</a> -->
               <!-- </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#info">  <i class="fa fa-user" aria-hidden="true"></i> Contact</a>
+                <a class="nav-link" href="#info"> <i class="fa fa-user" aria-hidden="true"></i> Contact</a>
               </li>
 
             </ul>
@@ -513,11 +513,11 @@
           <h4>
             Subscribe
           </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
+          <form id="myForm"
+            action="https://script.google.com/macros/s/AKfycbwrXWIhHIAssQzPstOqYxRcUJlBo3Ht8vL-IWjwJVJqVcjynmAXmiEA3cN577w6kBGrdg/exec"
+            method="POST" onsubmit="return redirectToTop()">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>

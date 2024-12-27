@@ -514,11 +514,12 @@
             Subscribe
           </h4>
           <form id="myForm"
-            action="https://script.google.com/macros/s/AKfycbwrXWIhHIAssQzPstOqYxRcUJlBo3Ht8vL-IWjwJVJqVcjynmAXmiEA3cN577w6kBGrdg/exec"
-            method="POST" onsubmit="return redirectToTop()">
+            action="https://script.google.com/macros/s/AKfycbzE7lwa44ylummLWdjKxDojT78urys29-J6t7Y8yMpB-84nPXK_3lXT1ZKOkJoT93FtJw/exec"
+            method="POST"  onsubmit="return handleFormSubmit(event)">
             <input type="email" name="email" id="email" placeholder="Enter your email" required />
             <button type="submit">Subscribe</button>
           </form>
+          <div id="message" style="display: none;"></div>
         </div>
       </div>
     </div>

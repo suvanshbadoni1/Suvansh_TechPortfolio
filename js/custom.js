@@ -54,6 +54,6 @@ function redirectToTop() {
     setTimeout(() => {
       // Redirect back to the same page
       window.location.href = window.location.pathname; // Reloads the current page from the top
-    }, 100); // Adjust delay as needed for form processing
+    }, 3000); // Adjust delay as needed for form processing
     return true; // Allow the form submission to proceed
   }
